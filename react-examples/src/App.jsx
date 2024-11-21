@@ -1,18 +1,20 @@
 import WelcomePage from "./components/WelcomePage"
-import ConditionalRendering from "./components/conditional_rendering/ConditionalRendering"
-import EventsHandling from "./components/events_handling/EventsHandling"
-import StateManagement from "./components/state_management/StateManagement"
-import ComponentStyling from "./components/component_styling/ComponentStyling"
-import Synchronization from "./components/synchronization/Synchronization"
+import DashboardConditionalRendering from "./components/1-conditional_rendering/DashboardConditionalRendering"
+import DashboardEventsHandling from "./components/2-events_handling/DashboardEventsHandling"
+import DashboardStateManagement from "./components/3-state_management/DashboardStateManagement"
+import DashboardComponentStyling from "./components/4-component_styling/DashboardComponentStyling"
+import DashboardSynchronization from "./components/5-synchronization/DashboardSynchronization"
+import DashboardContextUsage from "./components/6-context_usage/DashboardContextUsage"
 
 export default function App() 
 {
     return <>
         <WelcomePage/>
-        <ConditionalRendering/>
-        <EventsHandling/>
-        <StateManagement/>
-        <ComponentStyling/>
-        <Synchronization/>
+        <DashboardConditionalRendering/>
+        <DashboardEventsHandling/>
+        <DashboardStateManagement/>
+        <DashboardComponentStyling/>
+        <DashboardSynchronization/>
+        <DashboardContextUsage/>
     </>
 }
