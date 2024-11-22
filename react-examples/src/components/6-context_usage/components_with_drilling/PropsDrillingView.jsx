@@ -3,7 +3,7 @@ import HeadingsWithDrilling from './HeadingsWithDrilling'
 export default function PropsDrillingView() {
     return <section className="container">
         <div className="row w-100 pb-4">
-            <h3 className="display-2 text-center fw-bold">Props drilling</h3>
+            <h3 className="display-3 text-center fw-bold">Props drilling</h3>
             <hr />
             <h5 className="display-5 text-center fw-bold">without useContext()</h5>
         </div>

@@ -95,6 +95,7 @@ Before talking about `useState()` you need to know the meaning of "Hook", becaus
 There are many Hooks inside React, each specifically designed to let the developer deal with a particular feature of a component (`useEffect(), useState(), useMemo(), useRef()`...). You can find the library standard ones in the official guide: https://react.dev/reference/react/hooks. 
 
 When you need to add the `useState()` function inside your React components, first you need to **import it**. At the beginning of the code page, add
+
 ```jsx
 import { useState } from "react"
 ```
@@ -180,18 +181,29 @@ Remember that what's written inside a `useEffect()` Hook runs every commit to th
 Recall what the section **2.1 Component Lifecycle** says about the lifecycle of a **functional component**:
 
 1) **Mounting**: 
-```
-useEffect(() => {...}, [])
+
+```jsx
+useEffect(() => {
+	...
+	}, [])
 ```
 
 2) **Updating**: 
-```
-useEffect(() => {...}, [yourDependency])
+
+```jsx
+useEffect(() => {
+	...
+	}, [ yourDependency ])
 ```
 
-3) **Cleanup**: To perform cleanup actions return a function from your effect, 
+3) **Cleanup**: To perform cleanup actions return a function from your effect,
+
 ```jsx
-useEffect(() => { return () => {...} })
+useEffect(() => 
+	{
+		... 
+		return () => { ... } 
+	}, [])
 ```
 
 ## 2.7 Drilling Props
@@ -200,6 +212,55 @@ It's pretty common to pass props from one parent component to its children, but 
 
 ![[Pasted image 20241118162224.png]]
 
-To simplify this task React provides _Context_, a feature that allows a component to share some information to its children without passing it via props.
+To simplify this task React provides _Context_, a feature that allows a component to share information to its children without passing it via props.
 
-We will not deep dive too much into this topic, but it is important to remember how Context works because **routing** relies on it!  
+We will not deep dive too much into this topic, but it is important to remember how Context works because **routing** relies on it!
+
+The hook responsible for this feature is `useContext()`, which needs to be imported to be used inside your code (like the others):
+
+```jsx
+import { useContext } from "react"
+```
+
+It works as following:
+
+1) You need to define a context (possibly in an external `.js` file), like so:
+
+```js
+import { createContext } from "react"
+
+const INITIAL_LEVEL = 0
+export const LevelContext = createContext(INITIAL_LEVEL)
+```
+
+2) You need to wrap the **component** you want to set as the **provider** of the context with a special component called '`<LevelContext.Provider>`'
+
+```jsx
+import { useContext } from "react"
+import { LevelContext } from "./LevelContext"
+
+export default function Section({ children }) {
+	const level = useContext(LevelContext)
+	return <article className="border border-1 rounded-1 p-3">
+		<LevelContext.Provider value={level + 1}>
+			{ children }
+		</LevelContext.Provider>
+	</article>
+}
+```
+
+In this example, the `Section` component is the provider of the context called `LevelContext` — **with the value of the context set to `level`** . This means that every children under it can **consume** the value of `level`.
+
+3) Finally, you must declare where the context gets consumed. In this case, the headings need to know the level of nesting they're in, so they will be the **consumer** of the `LevelContext` **context**.
+
+```jsx
+import { useContext } from "react"
+import { LevelContext } from "./LevelContext"
+
+export default function Heading({ children }) {
+	const level = useContext(LevelContext)
+	...
+}
+```
+
+![[props_context.jpg]]

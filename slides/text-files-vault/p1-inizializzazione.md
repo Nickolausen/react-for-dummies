@@ -3,6 +3,15 @@
 >- **React for Dummies**, I.T.T. "Blaise Pascal" @ Cesena, IT
 >- Written by: Nicholas Magi - <nicholas.magi24[@]gmail.com>
 
+```table-of-contents
+title: Table of contents
+style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
+minLevel: 0 # Include headings from the specified level
+maxLevel: 0 # Include headings up to the specified level
+includeLinks: true # Make headings clickable
+debugInConsole: false # Print debug info in Obsidian console
+```
+
 ## 1.1 How to create a React + Vite project
 _(From https://vite.dev/guide/#scaffolding-your-first-vite-project)_
 
@@ -13,6 +22,7 @@ Simply run `npm create vite@latest` on your terminal and follow the prompts!
 Alternatively, run `npm create vite@latest <nome_progetto> -- --template react` to skip guided prompts.
 
 Finally run the `npm install` command, to download the default dependancies needed.
+
 
 ## 1.2 What happens after project creation
 

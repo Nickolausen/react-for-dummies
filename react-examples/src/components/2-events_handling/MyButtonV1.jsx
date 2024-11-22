@@ -16,6 +16,7 @@ export default function MyButtonV1({ classNames, message })
                 ... <br/>
                 {" <button onClick={handleOnClick} ...></button>"}
             </CodeBlockDisplay>
+
             <button className="fs-4 btn btn-primary" onClick={handleOnClick}>
                 Show message <span className="fst-italic">w/declared_function</span>
             </button>

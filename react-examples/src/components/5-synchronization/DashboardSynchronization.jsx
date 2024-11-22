@@ -8,7 +8,8 @@ export default function DashboardSynchronization()
 
     return <section className="container-fluid">
         <div className="row">
-            <h2 className="text-center display-4"><span className="fw-bold">Sincronizzazione</span> di un componente</h2>
+            <h2 className="text-center display-3"><span className="fw-bold">Sincronizzazione</span> di un componente</h2>
+            <h3 className="text-center display-5">w/<span className="fw-bold">useEffect()</span></h3>
         </div>
         <div className="row w-100 px-5">
             <div className="col-12 d-flex justify-content-center">

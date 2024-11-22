@@ -1,6 +1,5 @@
 import { useState } from "react";
 import MyBeautifulComponent from "./MyBeautifulComponent";
-import NestedComponent from "../NestedComponent";
 
 export default function RenderWithAND() 
 {

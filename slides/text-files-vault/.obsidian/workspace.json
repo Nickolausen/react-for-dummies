@@ -25,12 +25,14 @@
             "id": "a01aed1b3adbfc48",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.7.7"
+                "file": "p2-caratteristiche-componenti.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Release Notes 1.7.7"
+              "title": "p2-caratteristiche-componenti"
             }
           }
         ],
@@ -177,9 +179,10 @@
   },
   "active": "a01aed1b3adbfc48",
   "lastOpenFiles": [
-    "Pasted image 20241118162224.png",
     "p1-inizializzazione.md",
     "p2-caratteristiche-componenti.md",
+    "props_context.jpg",
+    "Pasted image 20241118162224.png",
     "Welcome.md"
   ]
 }

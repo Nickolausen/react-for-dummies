@@ -3,7 +3,7 @@ import HeadingsWithContext from './HeadingsWithContext'
 export default function PropsContextView() {
     return <section className="container">
         <div className="row w-100 pb-4">
-            <h3 className="display-2 text-center fw-bold">Props via context</h3>
+            <h3 className="display-3 text-center fw-bold">Props via context</h3>
             <hr />
             <h5 className="display-5 text-center fw-bold">w/useContext()</h5>
         </div>
