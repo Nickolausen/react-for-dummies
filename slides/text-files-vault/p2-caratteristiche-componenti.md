@@ -11,6 +11,8 @@ maxLevel: 0 # Include headings up to the specified level
 includeLinks: true # Make headings clickable
 debugInConsole: false # Print debug info in Obsidian console
 ```
+<div style="page-break-after: always;"></div>
+
 ## 2.1 Component Lifecycle
 
 In older React versions you would have designed a component as a **javascript class**. You would have extended a `React.Component` class in your custom component in order to have all the common properties a React component has. This approach has its pros and cons and particular features, like an **explicit lifecycle management**. 
@@ -78,6 +80,7 @@ However, this approach **would not work**. And there are two reasons that descri
 1) **Changes to local variables does not trigger a component's re-rendering**;
 2) **Local variable does not persist between renders**.
 
+> [!info] Our need
 > We must say to React to **remember the `idx` value after re-renders**, and this has to do with _state_.
 
 Those reasons introduce the `useState()` hook, the most important hook that manages the state of a component.
@@ -86,10 +89,13 @@ Those reasons introduce the `useState()` hook, the most important hook that mana
 
 Before talking about `useState()` you need to know the meaning of "Hook", because it's a key feature in React - and we'll use this term a lot from now on.
 
+> [!info] Definition
 > A "Hook" is just a **function** implemented inside the React library that lets the developer use different features of a component. 
 
-> These functions are called "Hook" because they let you "hook into" (_connect to_) a feature of component, like its state.
+>[!info] _Nice to remember_ 
+>These functions are called "Hook" because they let you "hook into" (_connect to_) a feature of component, like its state.
 
+> [!info]
 > Note that every Hook name starts with _"use"_.
 
 There are many Hooks inside React, each specifically designed to let the developer deal with a particular feature of a component (`useEffect(), useState(), useMemo(), useRef()`...). You can find the library standard ones in the official guide: https://react.dev/reference/react/hooks. 
@@ -112,7 +118,9 @@ const [ idx, setIdx ] = useState(0)
 
 Notice that we have passed `0` as parameter of `useState()`. This represents the initial value of `idx`.
 
-> 💡 Traditional naming conventions suggest to always write 
+>[!info]
+>💡 Traditional naming conventions suggest to always write: 
+
 ```jsx 
 const [ something, setSomething ] = useState(...)
 ```
@@ -166,16 +174,16 @@ To use it inside a component, first you need to **import it**.
 import { useEffect } from 'react'
 ```
 
-It's just a function that takes a callback function as the first parameter and an optional array of dependancies as the second one. It optionally returns a function which fires once the component gets removed from the DOM.
+It's just a function that takes a callback function as the first parameter and an optional array of dependencies as the second one. It optionally returns a function which fires once the component gets removed from the DOM.
 
 ```jsx
-useEffect(callback, dependancies?) -> function?
+useEffect(callback, dependencies?) -> function?
 ```
 
 Remember that what's written inside a `useEffect()` Hook runs every commit to the UI tree — in other words, **whenever the component gets placed in the DOM**.
 
+> [!info] Q&A
 > **Q**: When do I need to use Effects in my application?
-
 > **A**: You use an Effect when you need to synchronise your application with an external service — like an API, for instance. You can fetch data inside
 
 Recall what the section **2.1 Component Lifecycle** says about the lifecycle of a **functional component**:

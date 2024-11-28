@@ -1,0 +1,3 @@
+a.active {
+    color: red !important; /* Note that !important is needed because bootstrap has already defined its .active class! */
+}
