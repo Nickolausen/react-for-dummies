@@ -33,8 +33,7 @@ Thinking in React: i 5 passi necessari per strutturare una web application in Re
 
 ---
 #### [3] Routing
-React: progettazione di S.P.A. di default. Routing non supportato nativamente. `react-router` (versione 7.0): libreria esterna per gestire il routing di una web app React. Progetto "React Routing Examples": utilizzo di BrowserRouter, Routes e Route per definire le possibili strade di un'applicazione, e NavLink e Link per collegare effettivamente le varie parti della medesima. URL parametrica, hook `useParam()` per ottenere il parametro di ricerca dell'URL corrente.
-[...]
+React: progettazione di S.P.A. di default. Routing non supportato nativamente. `react-router` (versione 7.0): libreria esterna per gestire il routing di una web app React. Progetto "React Routing Examples": utilizzo di BrowserRouter, Routes e Route per definire le possibili strade di un'applicazione, e NavLink e Link per collegare effettivamente le varie parti della medesima. Nested Routes, URL parametrica, hook `useParam()` per ottenere il parametro di ricerca dell'URL corrente.
 
 ---
 #### [4] Gestione API esterna
