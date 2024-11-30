@@ -6,9 +6,9 @@ import './NavBar.css'
  * @returns the navbar w/ react-router navlinks
  */
 export default function NavBar() {
-    return <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    return <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-            <NavLink to="/" className={"navbar-brand"}>
+            <NavLink to="/" className={"navbar-brand px-3"}>
                 MyBeautifulNavbar
             </NavLink>
             <button

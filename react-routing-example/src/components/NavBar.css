@@ -1,3 +1,5 @@
 a.active {
-    color: red !important; /* Note that !important is needed because bootstrap has already defined its .active class! */
+    background-color: gray;
+    color: white !important; /* Note that !important is needed because bootstrap has already defined its .active class! */
+    border-radius: 10%;
 }

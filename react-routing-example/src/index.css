@@ -1,4 +1,4 @@
-html, body, #root, section {
+html, body, #root {
   height: 100%;
 }
 
@@ -7,4 +7,5 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
 }

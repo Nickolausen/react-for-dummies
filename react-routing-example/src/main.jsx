@@ -9,16 +9,12 @@ import NotFound from './pages/NotFound.jsx'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min'
+import App from './components/App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route index element={<HomePage/>}/>
-        <Route path='/about-us' element={<AboutUs/>}/>
-        <Route path='/shop' element={<Shop/>}/>
-        <Route path='/*' element={<NotFound/>}/>
-      </Routes>
+      <App/>
     </BrowserRouter>
   </StrictMode>,
 )
