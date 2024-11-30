@@ -37,5 +37,4 @@ React: progettazione di S.P.A. di default. Routing non supportato nativamente. `
 
 ---
 #### [4] Gestione API esterna
-Utilzzo di FlickAPI per ottenere immagini salvate in uno storage esterno.
-[...]
+Utilzzo di FlickAPI per ottenere immagini salvate in uno storage esterno. Progetto "React Fetch Examples": tipico utilizzo di FlickrAPI. Prassi di utilizzo di una qualsiasi API: studia la documentazione, ottieni una chiave, implementa la soluzione su React. Utilizzo di `useEffect` come hook di sincronizzazione con servizi esterni. Ripasso di `Promise`. 
