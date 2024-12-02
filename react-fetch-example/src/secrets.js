@@ -1,4 +1,5 @@
-let apiKey = "51cbb90e080a960a4193839cbd45273a"
+/* Anche se qui in chiaro a scopo didattico, è sempre bene nascondere questa informazione! */
+let apiKey = "51cbb90e080a960a4193839cbd45273a" 
 let albumId = "72177720320089939"
 let userId = "201366372%40N03"
 

@@ -2,24 +2,17 @@ import { useEffect, useState } from "react";
 import { QUERY_URL, PICTURES_URL } from "./secrets";
 import Footer from "./Footer";
 
-const getMeta = (url) => {
-  return new Promise((resolve, reject) => {
-    const img = new Image();
-    img.onload = () => resolve(img);
-    img.onerror = (err) => reject(err);
-    img.src = url;
-  });
-};
-
 function Gallery({ pictures }) {
   return (
     <div className="container-fluid">
       <div className="row">
-        {pictures.map((img) => (
-          <div key={img.key} className="py-4 col-12 col-md-6 col-lg-4 col-xl-2">
-            {img}
-          </div>
-        ))}
+        {
+          pictures.map((img) => (
+            <div key={img.key} className="text-center py-4 col-12 col-md-6 col-lg-4 col-xl-2">
+              {img}
+            </div>
+          ))
+        }
       </div>
     </div>
   );
@@ -36,7 +29,6 @@ function App() {
         const fetchedResult = await Promise.all(
           data.photoset.photo.map(async (pic) => {
             const url = PICTURES_URL(pic.server, pic.id, pic.secret);
-            await getMeta(url); // Ensure the image is preloaded
             return (
               <img
                 key={pic.id}
