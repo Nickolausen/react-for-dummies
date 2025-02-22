@@ -1,0 +1,40 @@
+body {
+    background-color: lightblue;
+    color: navy;
+    font-family: Arial, sans-serif;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#main-header {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-item a {
+    color: navy;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.content {
+    border: 2px solid navy;
+    padding: 10px;
+}
+
+footer {
+    margin: 20px 0;
+}
+
+button {
+    padding: 2em;
+    border-radius: 10px;
+    color: white;
+    background-color: navy;
+}

@@ -1,0 +1,42 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: lightgray;
+    color: darkred;
+    font-family: "Courier New", monospace;
+}
+
+#main-header {
+    background-color: darkred;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-item a {
+    color: darkred;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.content {
+    border: 2px solid darkred;
+    padding: 10px;
+}
+
+footer {
+    margin: 20px 0;
+}
+
+button {
+    padding: 2em;
+    text-transform: uppercase;
+    border: 5px solid darkred;
+    border-radius: 10px;
+    color: darkred;
+    font-weight: bold;
+    font-size: x-large;
+    background-color: transparent;
+}

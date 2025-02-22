@@ -1,0 +1,58 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    gap: 1em;
+}
+
+h3 {
+    margin: 0 0;
+    text-align: center;
+}
+
+body > *:not(h3) {
+    text-align: center;
+    outline: 3px solid green;
+    background-color: rgba(0, 255, 0, .25);
+    padding: 1rem;
+    margin: 10px 0px;
+}
+
+header > *, main *:not(div, p), footer > * {
+    padding: 1rem;
+    margin: 10px 0px;
+    outline: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 0, 0, .25);
+}
+
+div {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+}
+
+article, section {
+    flex-grow: 1;
+}
+
+aside {
+    min-width: 3rem;
+}
+
+p {
+    margin: 0;
+}

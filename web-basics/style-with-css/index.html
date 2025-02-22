@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Interchangeability</title>
+    <link id="stylesheet" rel="stylesheet" href="style1.css">
+    <style>
+        html, body {
+            height: 100%;
+        }
+    </style>
+</head>
+<body style="display: flex; flex-direction: column;">
+    <header id="main-header">Welcome to My Page</header>
+    <nav>
+        <ul>
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main style="flex-grow: 1;">
+        <section style="height: 100%;" class="content">
+            <h1>Main Content</h1>
+            <p>This is a paragraph with some sample text.</p>
+        </section>
+    </main>
+    <footer style="text-align: center;">
+        <button onclick="switchStyle()">Switch Style</button>
+    </footer>
+    <script>
+        function switchStyle() {
+            let stylesheet = document.getElementById('stylesheet');
+            stylesheet.href = (stylesheet.href.includes('style1.css')) ? 'style2.css' : 'style1.css';
+        }
+    </script>
+</body>
+</html>
