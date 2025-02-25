@@ -2,4 +2,6 @@
 title: React for Dummies - Web Slides
 domain: react-for-dummies.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 url: https://react-for-dummies.github.io  # the base hostname and protocol for your site, e.g. http://example.com
-baseurl: /      # place folder name if the site is served in a subfolder
+include:
+ - images
+# baseurl: /      # place folder name if the site is served in a subfolder
