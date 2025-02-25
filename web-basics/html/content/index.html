@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            span {
+                background-color: cornflowerblue;
+                font-weight: bolder;
+                color: red;
+                outline: 2px solid red;
+                border-radius: 2.5px;
+                padding: 2.5px 15px;
+            }
+            
+            body {
+                padding-inline: 10em;
+            }
+
+            table, td {
+                border: 2px solid black;
+            }
+
+            @media screen and (max-width: 768px) {
+                body {
+                    padding-inline: 0;
+                }
+            }
+
+            #tables-and-lists main {
+                display: flex;
+                gap: 8em;
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <main>
+            <section>
+                <header>
+                    <h1 style="text-align: center;">— Heading & Phrasing —</h1>
+                </header>
+                <main>
+                    <h1>H1 Heading with <span>important content</span></h1>
+                    <h2>H2 Heading</h2>
+                    <h3>H3 Heading</h3>
+                    <h4>H4 Heading</h4>
+                    <h5>H5 Heading</h5>
+                    <h6>H6 Heading</h6>
+                    <p><strong>&lt;p&gt; 1</strong>: Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Repudiandae perspiciatis inventore debitis accusantium veritatis repellendus iusto aperiam omnis velit numquam. 
+                        Dignissimos, aperiam minus voluptate quos odio ipsum laboriosam! Iure, esse.</p>
+                    <p><strong>&lt;p&gt; 2</strong>: Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Minus, magni ex autem quas accusamus ut esse id deserunt necessitatibus 
+                        temporibus laudantium ducimus incidunt quaerat nihil 
+                        recusandae quidem voluptates reprehenderit debitis!</p>
+                    <code>console.log("Code block")</code>
+                    <br>
+                    <a href="../structure/index.html" target="_blank">Questo è un link ad un documento interno!</a>
+                    <br>
+                    <a href="#tables-and-lists">Questo è un link ad id interno!</a>
+                    <br>
+                    <article>
+                        Altri elementi che definiscono il ruolo del testo
+                        come:
+                        <ul>
+                            <li><code>&lt;blockquote&gt;</code> — <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" target="_blank">developer.mozilla.org</a></li>
+                            <li><code>&lt;q&gt;</code> — <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q" target="_blank">developer.mozilla.org</a> </li> 
+                            <li><code>&lt;cite&gt;</code> — <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite" target="_blank">developer.mozilla.org</a></li> 
+                            <li><code>&lt;i&gt;</code> — <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i" target="_blank">developer.mozilla.org</a></li> 
+                            <li><code>&lt;b&gt;</code> — <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b" target="_blank">developer.mozilla.org</a></li>
+                            <li><code>&lt;strong&gt;</code> — <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong" target="_blank">developer.mozilla.org</a></li> 
+                            <li><code>&lt;em&gt;</code> — <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" target="_blank">developer.mozilla.org</a></li> 
+                            <li><code>&lt;small&gt;</code> — <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small" target="_blank">developer.mozilla.org</a></li> 
+                            <li><code>&lt;abbr&gt;</code> — <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr" target="_blank">developer.mozilla.org</a></li> 
+                            <li><code>&lt;code&gt;</code> — <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code" target="_blank">developer.mozilla.org</a></li>
+                            <li><code>&lt;dfn&gt;</code> — <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn" target="_blank">developer.mozilla.org</a></li> 
+                            <li><code>&lt;var&gt;</code> — <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var" target="_blank">developer.mozilla.org</a></li> 
+                            <li><code>&lt;sub&gt;</code> — <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub" target="_blank">developer.mozilla.org</a></li> 
+                            <li><code>&lt;sup&gt;</code> — <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup" target="_blank">developer.mozilla.org</a></li> 
+                            <li><code>&lt;ins&gt;</code> — <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins" target="_blank">developer.mozilla.org</a></li> 
+                            <li><code>&lt;del&gt;</code> — <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del" target="_blank">developer.mozilla.org</a></li>
+                        </ul> 
+                    </article>
+                </main>
+            </section>
+            <section id="tables-and-lists">
+                <header>
+                    <h1 style="text-align: center;">— Tables & Lists —</h1>
+                </header>
+                <main>
+                    <div class="left">
+                        <table style="text-align: center;">
+                            <caption>Caption di questa tabella</caption>
+                            <thead>
+                                <tr> <!-- tr: table row -->
+                                    <th>Lunedì</th> <!-- th: table header -->
+                                    <th>Martedì</th>
+                                    <th>Mercoledì</th>
+                                    <th>Giovedì</th>
+                                    <th>Venerdì</th>
+                                    <th>Sabato</th>
+                                    <th>Domenica</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>X</td> <!-- td: table data -->
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td rowspan="2">X</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                </tr>
+                                <tr>
+                                    <td>X</td>
+                                    <td rowspan="3"><code>rowspan="3"</code></td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>X</td>
+                                    <td>—</td>
+                                </tr>
+                                <tr>
+                                    <td>X</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                </tr>
+                                <tr>
+                                    <td>X</td>
+                                    <td>—</td>
+                                    <td>X</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="right">
+                        Ordered List <code>&lt;ol&gt;</code>
+                        <ol>
+                            <li>First <code>&lt;li&gt;</code></li>
+                            <li>Second <code>&lt;li&gt;</code></li>
+                            <li>Third <code>&lt;li&gt;</code></li>
+                        </ol>
+                        Unordered List <code>&lt;ul&gt;</code>
+                        <ul>
+                            <li>First <code>&lt;li&gt;</code></li>
+                            <li>Second <code>&lt;li&gt;</code></li>
+                            <li>Third <code>&lt;li&gt;</code></li>
+                        </ul>
+                    </div>
+                </main>
+            </section>
+            <section>
+                <header>
+                    <h1 style="text-align: center;">— Embedded —</h1>
+                </header>
+                <main>
+                    <article style="display: flex; justify-content: center; flex-direction: column;">
+                        <img src="https://placehold.co/100x50/png" alt="Placeholder">
+                        <figure>
+                            <img src="./assets/img/panterini_urla_a_parini.jpg" alt="Placeholder">
+                            <figcaption>Fig. 1 — Studente stordisce il professore</figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <h2><code>&lt;iframe&gt;</code></h2>
+                        <p>Tag per incorporare siti web, video su YouTube...</p>
+                        <iframe width="1100" height="600" src="https://www.ispascalcomandini.it/"></iframe>
+                    </article>
+                </main>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Box Model</title>
+        <meta name="description" content="Box Model demo">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            html, body {
+                height: 100%;
+            }
+            div {
+                background-color: rgba(239, 0, 0, .5);
+                border: 2px solid #af0000;
+                padding: 50px;
+                margin: 30px;
+            }
+        </style>
+    </head>
+    <body style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <p>
+            Ispeziona il seguente elemento; dovresti osservare:
+        </p>
+        <ul>
+            <li><code>padding: 50px</code></li>
+            <li><code>margin: 30px</code></li>
+            <li><code>border: 2px</code></li>
+        </ul>
+        <p>
+            Dimensione totale dell'elemento: <code>{height,width} = content{Height,Width} + padding + border + margin</code>
+        </p>
+        <div style="font-size: 6rem;">
+            Box Model
+        </div>
+    </body>
+</html>
