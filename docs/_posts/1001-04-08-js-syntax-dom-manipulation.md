@@ -4,4 +4,4 @@ layout: post
 
 #### JavaScript
 
-![alt text](../images/dom-manipulation.png)
+![alt text]({{ site.baseurl }}/images/dom-manipulation.png)
