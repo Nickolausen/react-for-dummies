@@ -4,4 +4,4 @@ domain: react-for-dummies.github.io       # if you want to force HTTPS, specify 
 url: https://react-for-dummies.github.io  # the base hostname and protocol for your site, e.g. http://example.com
 baseurl: /docs      # place folder name if the site is served in a subfolder
 include: 
-  - images
+  - _images
