@@ -16,8 +16,8 @@ Creazione di oggetti
         JSON Notation
     </th>
     <tr>
-        <td><img src="../images/js-class.png"/></td>
-        <td><img src="../images/js-proto.png"/></td>
-        <td><img src="../images/JSON-obj.png"/></td>
+        <td><img src="./images/js-class.png"/></td>
+        <td><img src="./images/js-proto.png"/></td>
+        <td><img src="./images/JSON-obj.png"/></td>
     </tr>
 </table>
