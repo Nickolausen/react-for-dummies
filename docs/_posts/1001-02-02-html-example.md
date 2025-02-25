@@ -2,4 +2,4 @@
 layout: post
 ---
 
-![alt text](../images/HTML-example.png)
+![alt text]({{ site.baseurl }}/images/HTML-example.png)
