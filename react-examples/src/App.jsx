@@ -6,8 +6,7 @@ import DashboardComponentStyling from "./components/4-component_styling/Dashboar
 import DashboardSynchronization from "./components/5-synchronization/DashboardSynchronization"
 import DashboardContextUsage from "./components/6-context_usage/DashboardContextUsage"
 
-export default function App() 
-{
+export default function App() {
     return <>
         <WelcomePage/>
         <DashboardConditionalRendering/>
