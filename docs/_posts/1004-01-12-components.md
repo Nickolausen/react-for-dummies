@@ -6,4 +6,4 @@ layout: post
 
 <mark><b>Core feature</b></mark> di React
 
-> Blocchi di codici **indipendenti** e **riutilizzabili**.
+> Blocchi di UI **indipendenti** e **riutilizzabili**.

@@ -23,4 +23,4 @@ Totale: **10 ore**, divise in **5 lezioni**
     </tr>
 > </table>
 
-Tutte le lezioni si svolgono **dalle 14:30 alle 16:30**
+Tutte le lezioni si svolgono **dalle 14:30 alle 16:30** in **L1**.
