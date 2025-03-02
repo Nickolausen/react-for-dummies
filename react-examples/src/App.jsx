@@ -7,7 +7,7 @@ import DashboardSynchronization from "./components/5-synchronization/DashboardSy
 import DashboardContextUsage from "./components/6-context_usage/DashboardContextUsage"
 
 export default function App() {
-    return <>
+    return <main className="px-5 d-flex flex-column justify-content-center">
         <WelcomePage/>
         <DashboardConditionalRendering/>
         <DashboardEventsHandling/>
@@ -15,5 +15,5 @@ export default function App() {
         <DashboardComponentStyling/>
         <DashboardSynchronization/>
         <DashboardContextUsage/>
-    </>
+    </main>
 }

@@ -72,9 +72,16 @@
                     <br>
                     <article>
                         Altri elementi che definiscono il ruolo del testo
-                        come:
+                        sono:
                         <ul>
-                            <li><code>&lt;blockquote&gt;</code> — <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" target="_blank">developer.mozilla.org</a></li>
+                            <li><code>&lt;blockquote&gt;</code> — <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" target="_blank">developer.mozilla.org</a>
+                                <blockquote cite="https://www.huxley.net/bnw/four.html">
+                                    <p>
+                                        "No hugs and kisses, only bugs and fixes."
+                                    </p>
+                                </blockquote>
+                                <p>—Random indian guy, <cite>Random YT Tutorial</cite></p>
+                            </li>
                             <li><code>&lt;q&gt;</code> — <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q" target="_blank">developer.mozilla.org</a> </li> 
                             <li><code>&lt;cite&gt;</code> — <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite" target="_blank">developer.mozilla.org</a></li> 
                             <li><code>&lt;i&gt;</code> — <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i" target="_blank">developer.mozilla.org</a></li> 
@@ -153,15 +160,15 @@
                     <div class="right">
                         Ordered List <code>&lt;ol&gt;</code>
                         <ol>
-                            <li>First <code>&lt;li&gt;</code></li>
-                            <li>Second <code>&lt;li&gt;</code></li>
-                            <li>Third <code>&lt;li&gt;</code></li>
+                            <li>First List Item <code>&lt;li&gt;</code></li>
+                            <li>Second List Item <code>&lt;li&gt;</code></li>
+                            <li>Third List Item <code>&lt;li&gt;</code></li>
                         </ol>
                         Unordered List <code>&lt;ul&gt;</code>
                         <ul>
-                            <li>First <code>&lt;li&gt;</code></li>
-                            <li>Second <code>&lt;li&gt;</code></li>
-                            <li>Third <code>&lt;li&gt;</code></li>
+                            <li>First List Item <code>&lt;li&gt;</code></li>
+                            <li>Second List Item <code>&lt;li&gt;</code></li>
+                            <li>Third List Item <code>&lt;li&gt;</code></li>
                         </ul>
                     </div>
                 </main>
@@ -174,8 +181,8 @@
                     <article style="display: flex; justify-content: center; flex-direction: column;">
                         <img src="https://placehold.co/100x50/png" alt="Placeholder">
                         <figure>
-                            <img src="./assets/img/panterini_urla_a_parini.jpg" alt="Placeholder">
-                            <figcaption>Fig. 1 — Studente stordisce il professore</figcaption>
+                            <img src="./assets/img/The_Hay_Wain_18212.webp" alt="Placeholder">
+                            <figcaption>Fig. 1 — <i>The Hay Wain</i>, John Constable</figcaption>
                         </figure>
                     </article>
                     <article>
@@ -183,6 +190,89 @@
                         <p>Tag per incorporare siti web, video su YouTube...</p>
                         <iframe width="1100" height="600" src="https://www.ispascalcomandini.it/"></iframe>
                     </article>
+                    <article>
+                        <h2><code>&lt;audio & video&gt;</code></h2>
+                        <audio controls>
+                            <source src="./assets/audio/bg_music.mp3" type="audio/mpeg">
+                            Your browser does not support the audio tag.
+                        </audio>
+                        <video width="320" height="240" controls>
+                            <source src="./assets/video/3_Pythagoras.mp4" type="video/mp4">
+                            Your browser does not support the audio tag.
+                        </video>
+                    </article>
+                </main>
+            </section>
+            <section>
+                <header>
+                    <h1 style="text-align: center;">— Forms —</h1>
+                </header>
+                <main>
+                    <form action="#" method="post">
+                        <label for="text">Text (<code>type="text"</code>):</label>
+                        <input type="text" id="text" name="text"><br><br>
+                        
+                        <label for="password">Password (<code>type="password"</code>):</label>
+                        <input type="password" id="password" name="password"><br><br>
+                        
+                        <label for="email">Email (<code>type="email"</code>):</label>
+                        <input type="email" id="email" name="email"><br><br>
+                        
+                        <label for="number">Number (<code>type="number"</code>):</label>
+                        <input type="number" id="number" name="number"><br><br>
+                        
+                        <label for="tel">Telephone (<code>type="tel"</code>):</label>
+                        <input type="tel" id="tel" name="tel"><br><br>
+                        
+                        <label for="url">URL (<code>type="url"</code>):</label>
+                        <input type="url" id="url" name="url"><br><br>
+                        
+                        <label for="date">Date (<code>type="date"</code>):</label>
+                        <input type="date" id="date" name="date"><br><br>
+                        
+                        <label for="time">Time (<code>type="time"</code>):</label>
+                        <input type="time" id="time" name="time"><br><br>
+                        
+                        <label for="datetime">Datetime (<code>type="datetime-local"</code>):</label>
+                        <input type="datetime-local" id="datetime" name="datetime"><br><br>
+                        
+                        <label for="month">Month (<code>type="month"</code>):</label>
+                        <input type="month" id="month" name="month"><br><br>
+                        
+                        <label for="week">Week (<code>type="week"</code>):</label>
+                        <input type="week" id="week" name="week"><br><br>
+                        
+                        <label for="color">Color (<code>type="color"</code>):</label>
+                        <input type="color" id="color" name="color"><br><br>
+                        
+                        <label for="range">Range (<code>type="range"</code>):</label>
+                        <input type="range" id="range" name="range" min="0" max="100"><br><br>
+                        
+                        <label for="checkbox">Checkbox (<code>type="checkbox"</code>):</label>
+                        <input type="checkbox" id="checkbox" name="checkbox"><br><br>
+                        
+                        <label for="radio1">Radio 1 (<code>type="radio"</code>):</label>
+                        <input type="radio" id="radio1" name="radio" value="1">
+                        <label for="radio2">Radio 2 (<code>type="radio"</code>):</label>
+                        <input type="radio" id="radio2" name="radio" value="2"><br><br>
+                        
+                        <label for="file">File (<code>type="file"</code>):</label>
+                        <input type="file" id="file" name="file"><br><br>
+                        
+                        <label for="textarea">Textarea (<code>textarea</code>):</label>
+                        <textarea id="textarea" name="textarea" rows="4" cols="30"></textarea><br><br>
+                        
+                        <label for="select">Select (<code>select</code>):</label>
+                        <select id="select" name="select">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </select><br><br>
+                        
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                        <button type="button">Just a regular button</button>
+                    </form>
                 </main>
             </section>
         </main>

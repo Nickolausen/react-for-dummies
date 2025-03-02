@@ -26,9 +26,10 @@ export default function MutateToDoList() {
                     setId(newId)
                 }
 
-            }} className='btn btn-primary'>Aggiungi to-do</button>
+            }} className='btn btn-primary'>Aggiungi to-do
+            </button>
             <CodeBlockDisplay>
-                todos.<span className='fw-bold'>push</span>({"<li key={newId}>newToDo</li>"}
+                todos.<span className='fw-bold'>push</span>({"<li key={newId}>newToDo</li>"})
             </CodeBlockDisplay>
         </form>
 
