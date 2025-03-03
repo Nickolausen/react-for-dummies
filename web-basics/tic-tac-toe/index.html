@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tic Tac Toe</title>
+        <meta name="description" content="Simple Tic Tac Toe made with plain HTML, JS and CSS">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/reboot.css">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+       
+        <header style="text-align: center;">
+            <h1 id="main-title">Tic Tac Toe</h1>
+            <h2>w/HTML, CSS & JavaScript</h2>
+        </header>
+
+        <main>
+            <!-- Tutto si riempirà dinamicamente! -->
+            <p id="final-result-display"></p>
+            <p id="turno-display"></p>
+            <div style="width: 600px; height: 600px;" id="canvas">
+            
+            </div>
+            <button id="restart-btn" type="button">Restart</button>
+        </main>
+
+        <script type="module" src="./script.js"></script>
+    </body>
+</html>

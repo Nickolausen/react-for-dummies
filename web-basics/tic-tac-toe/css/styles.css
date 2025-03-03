@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-title {
+    font-size: 5em;
+    text-align: center;
+    padding-top: 0em;
+}
+
+#main-title ~ h2 {
+    margin-top: -20px;
+    color: gray;
+}
+
+#canvas {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    box-shadow: 10px 10px black;
+}
+
+#turno-display {
+    background-color: rgba(0, 255, 0, .5);
+    border: 2px solid green;
+    padding: 5px;
+    border-radius: 5%;
+}
+
+.cross {
+    color: red;
+}
+
+.circle {
+    color: blue;
+}
+
+.cell {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+}
+
+.success {
+    background-color: rgba(255, 255, 0, .5);
+    border: 3px solid orange;
+    border-radius: 10%;
+}
+
+.deadlock {
+    background-color: rgba(255, 0, 0, .5);
+    border: 3px solid red;
+    border-radius: 2%;
+}
+
+#final-result-display {
+    padding: 1em;
+    font-size: x-large;
+    margin-top: -20px;
+}
+
+#restart-btn {
+    margin-top: 1em;
+    padding-inline: .5em;
+    font-size: xx-large;
+    border-radius: 5%;
+    background-color: rgba(0, 0, 255, 0.5);
+}
