@@ -6,6 +6,10 @@ import { transposeMatrix } from "./utils.js"
  * sono commenti di documentazione! Servono ufficialmente per documentare tutto di un codice:
  * tipo di dato, funzionamento, ritorno di una funzione... è molto utile specificare il tipo di dato di una variabile — quando conosciuto —
  * perché permette di abilitare l'IntelliSense, che altrimenti non esisterebbe!
+ * Vedete la differenza nel loro effetto anche passando sopra ad un pezzo di codice documentato:
+ * VS Code dovrebbe mostrare in automatico uno snippet con la documentazione da voi inserita
+ * 
+ * Some docs: https://jsdoc.app/tags-type
  */
 
 // In JavaScript non esistono gli enum,
@@ -33,7 +37,7 @@ class GameLogic {
             ]
             // Turno del giocatore: modo randomico per scegliere tra X e O
             this.turn = Math.random() % 2 === 0 ? symbols["X"] : symbols["O"]
-            
+
             // Simbolo vincitore: può essere una stringa (X/O) oppure rimanere `undefined`
             /** @type {string | undefined} */
             this.winner = undefined
@@ -113,10 +117,11 @@ GameLogic.prototype.makeMove = function (x, y) {
  * @type Boolean
  */
 GameLogic.prototype.isGameOver = function () {
+
     const symbolsToCheck = [ symbols["X"], symbols["O"] ]
     // Per tutti i simboli dei 2 giocatori, controllo un eventuale tris sulle due diagonali
     for (const symbol of symbolsToCheck) {
-        if (diagonalCheck(this.grid, symbol)) {
+        if (this.diagonalCheck(this.grid, symbol)) {
             this.winner = symbol
             return true
         }
@@ -124,7 +129,7 @@ GameLogic.prototype.isGameOver = function () {
 
     // Faccio un controllo in orizzontale, su tutte le righe
     for (const symbol of symbolsToCheck) {
-        if (horizontalCheck(this.grid, symbol)) {
+        if (this.horizontalCheck(this.grid, symbol)) {
             this.winner = symbol
             return true
         }
@@ -135,7 +140,7 @@ GameLogic.prototype.isGameOver = function () {
     /** @type {Array<Array<String>>} */
     const transposedGrid = transposeMatrix(this.grid)
     for (const symbol of symbolsToCheck) {
-        if (horizontalCheck(transposedGrid, symbol)) {
+        if (this.horizontalCheck(transposedGrid, symbol)) {
             this.winner = symbol
             return true
         }
