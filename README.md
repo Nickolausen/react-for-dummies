@@ -4,27 +4,48 @@
 ### Informazioni tecniche
 <ul>
 <li>Corso STEM;</li>
-<li>10h totali, suddivise in 5 lezioni pomeridiane di 2h ciascuna; calendario [in bozza]:</li>
+<li>10h totali, suddivise in 5 lezioni pomeridiane di 2h ciascuna; calendario:</li>
 <ul>
-    <li>martedì 04 marzo, 14:30-16:30</li> 
-    <li>⁠⁠⁠venerdì 07 marzo, 14:30-16:30</li> 
-    <li>⁠⁠martedì 11 marzo, 14:30-16:30</li>
-    <li>⁠⁠martedì 18 marzo, 14:30-16:30</li> 
-    <li>⁠venerdì 21 marzo, 14:30-16:30</li>
+    <li>martedì 04 marzo, 14:30-16:30 in L1</li> 
+    <li>⁠⁠⁠venerdì 07 marzo, 14:30-16:30 in L1</li> 
+    <li>⁠⁠martedì 11 marzo, 14:30-16:30 in L1</li>
+    <li>⁠⁠martedì 18 marzo, 14:30-16:30 in L1</li> 
+    <li>⁠venerdì 21 marzo, 14:30-16:30 in L1</li>
 </ul>
     <li> tenuto da: Nicholas Magi, <code>&lt;nicholas.magi24[at]gmail.com&gt;</code></li>
 </ul>
 
 ### Contenuti del corso
 ---
-#### [1] Introduzione a React, richiami di concetti base del Web Development
+#### [0] Fondamenti del Web
+HTML, CSS e JavaScript; separazione dei compiti: descrizione del contenuto (HTML), styling del contenuto (CSS) e interattività (JS).
+- HTML
+    - Document Object Model
+    - Semantica dei tag: sectioning e phrasing
+        - importanza della semantica
+        - esempi di alcuni tag molto utilizzati: `<img>` (*immagine*) e `<a>` (*anchor*)
+    - attributi
+        - universali (`style`, `data-`, `class`, `id`) 
+        - `class` vs `id`
+- CSS
+    - a cosa serve
+    - come importare un foglio di stile: 4 possibilità
+    - logica di funzionamento
+    - sintassi - selettore e proprietà
+        - tabella dei selettori
+    - conflitti tra regole: cenni alla specificità di una regola
+    - box model
+    - *da inserire*: Flex Box (indispensabile per capire il funzionamento di Bootstrap)
+- JavaScript
+    - caratteristiche principali del linguaggio: debolmente tipizzato e orientato ai prototipi
+    - visione del concetto di oggetto: diversi modalità di creazione (via Class, Function o JSON-like)
+    - importare uno script all'interno di un documento HTML: 3 possibilità
+    - dichiarazione di una variabile: `const` vs `let`
+    - DOM Manipulation: cenni con alcuni esempi
 
-Quali sono gli unici linguaggi front-end che un browser può "capire": HyperText Markup Language, Cascading Style Sheet e JavaScript.
-Rapidi esempi del loro effetto. Il principio D.R.Y.: Don't Repeat Yourself. Perchè la programmazione con solo HTML, CSS e JavaScript vìola suddetto principio.
+#### [1] Introduzione a React
 
-Web frameworks: crescita esponenziale negli ultimi anni, più di 100 frameworks al momento in circolazione ma solo alcuni godono di tanta popolarità.
-
-React: libreria per lo sviluppo di applicazioni web. Differenza **framework** vs. **libreria**. Feature di React: componenti, hooks, routing.
+React: libreria per lo sviluppo di applicazioni web. Differenza **framework** vs. **libreria**. Vantaggi e svantaggi di una libreria e di un framework. Feature di React: componenti, hooks, routing.
 Presentazione del progetto guida: **ReAuction**, casa d'aste per installazioni artistiche di Alberto Timossi - rivisitazione di un vecchio progetto 'Astazor'. Aspetti tecnici del progetto: gestione componenti, routing e interazione con API esterna (utilizzo di FlickrAPI per ottenimento immagini da servizio esterno).
 
 Setup del progetto: inizializzazione con Vite di un template React + JavaScript, sguardo alla struttura del progetto: le cartelle `node_modules/`, `public/` e `src/`. Sguardo alla struttura tipo di un componente - analisi di `App.jsx`.
@@ -46,4 +67,8 @@ React: progettazione di S.P.A. di default. Routing non supportato nativamente. `
 
 ---
 #### [4] Gestione API esterna
-Utilzzo di FlickAPI per ottenere immagini salvate in uno storage esterno. Progetto "React Fetch Examples": tipico utilizzo di FlickrAPI. Prassi di utilizzo di una qualsiasi API: studia la documentazione, ottieni una chiave, implementa la soluzione su React. Utilizzo di `useEffect` come hook di sincronizzazione con servizi esterni. Ripasso di `Promise`. 
+Utilzzo di FlickAPI per ottenere immagini salvate in uno storage esterno. Progetto "React Fetch Examples": tipico utilizzo di FlickrAPI. Prassi di utilizzo di una qualsiasi API: studia la documentazione, ottieni una chiave, implementa la soluzione su React. Utilizzo di `useEffect` come hook di sincronizzazione con servizi esterni. Ripasso di `Promise`.
+
+---
+#### *opzionale* — [5] Deploy di un'applicazione
+Documentare Google Firebase / Netlify / GitHub Pages
