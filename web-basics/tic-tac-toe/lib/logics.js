@@ -1,5 +1,13 @@
 import { transposeMatrix } from "./utils.js"
 
+/*
+ * P.S.:
+ * Spesso vedrete strani commenti, tipo questo ma con un asterisco in più in cima;
+ * sono commenti di documentazione! Servono ufficialmente per documentare tutto di un codice:
+ * tipo di dato, funzionamento, ritorno di una funzione... è molto utile specificare il tipo di dato di una variabile — quando conosciuto —
+ * perché permette di abilitare l'IntelliSense, che altrimenti non esisterebbe!
+ */
+
 // In JavaScript non esistono gli enum,
 // quindi un possibile workaround potrebbe essere utilizzare 
 // un oggetto con valori predefiniti
@@ -47,6 +55,38 @@ class GameLogic {
         this.isFull = (x, y) => {
             return this.grid[x][y] !== symbols["EMPTY"]
         }
+    }
+
+    /**
+     * @param {Array<Array<String>>} matrix 
+     * @param {String} value 
+     * @returns `true` se esiste almeno 1 riga che contiene solo simboli `value`, `false` altrimenti
+     */
+    horizontalCheck(matrix, value) {
+        // Filtro tutte le righe che hanno 'value' in tutte le celle
+        const rowsWithOnlyValue = matrix.filter(row => row.every(cell => cell === value))
+        return rowsWithOnlyValue.length > 0
+    }
+
+    /**
+     * @param {Array<Array<String>>} matrix 
+     * @param {String} value 
+     * @returns `true` se esiste almeno 1 diagonale che contiene solo simboli `value`, `false` altrimenti
+     */
+    diagonalCheck(matrix, value) {
+        // Due contatori: 
+        // - 1 per le occorrenze sulla diagonale principale (da in alto a sx a in basso a dx)
+        // - 1 per le occorrenze sulla diagonale secondaria (da in alto a dx a in basso a sx)
+        let [occurrencesMainDiagonal, occurrencesOtherDiagonal] = [0, 0]
+        for (let i = 0; i < matrix.length; i++) {
+            if (matrix[i][i] === value) {
+                occurrencesMainDiagonal++;
+            }
+            if (matrix[matrix.length - (i + 1)][i] === value) {
+                occurrencesOtherDiagonal++;
+            }
+        }
+        return occurrencesMainDiagonal === matrix.length || occurrencesOtherDiagonal === matrix.length
     }
 }
 
@@ -108,39 +148,6 @@ GameLogic.prototype.isGameOver = function () {
     }
 
     return false
-}
-
-/**
- * @param {Array<Array<String>>} matrix 
- * @param {String} value 
- * @returns `true` se esiste almeno 1 riga che contiene solo simboli `value`, `false` altrimenti
- */
-function horizontalCheck(matrix, value) {
-    // Filtro tutte le righe che hanno 'value' in tutte le celle
-    const rowsWithOnlyValue = matrix.filter(row => row.every(cell => cell === value))
-    return rowsWithOnlyValue.length > 0
-}
-
-/**
- * 
- * @param {Array<Array<String>>} matrix 
- * @param {String} value 
- * @returns `true` se esiste almeno 1 diagonale che contiene solo simboli `value`, `false` altrimenti
- */
-function diagonalCheck(matrix, value) {
-    // Due contatori: 
-    // - 1 per le occorrenze sulla diagonale principale (da in alto a sx a in basso a dx)
-    // - 1 per le occorrenze sulla diagonale secondaria (da in alto a dx a in basso a sx)
-    let [occurrencesMainDiagonal, occurrencesOtherDiagonal] = [0, 0]
-    for (let i = 0; i < matrix.length; i++) {
-        if (matrix[i][i] === value) {
-            occurrencesMainDiagonal++;
-        }
-        if (matrix[matrix.length - (i + 1)][i] === value) {
-            occurrencesOtherDiagonal++;
-        }
-    }
-    return occurrencesMainDiagonal === matrix.length || occurrencesOtherDiagonal === matrix.length
 }
 
 /**

@@ -11,3 +11,7 @@ console.log(b);
 
 console.log(rest);
 // Expected output: Array [30, 40, 50]
+
+// 👹 Posso inserire dati eterogenei all'interno di uno stesso vettore
+let c = [2, "5", 'f', false, { p1: 2, p2: "true" }]
+console.log(c)

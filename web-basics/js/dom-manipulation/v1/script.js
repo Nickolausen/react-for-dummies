@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const container = document.getElementById("container");
         const box = document.createElement("div");
         box.classList.add("box");
-    
+
         // Assign a random color
         box.style.backgroundColor = `hsl(${Math.random() * 360}, 70%, 60%)`;
     
