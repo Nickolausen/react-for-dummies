@@ -19,7 +19,11 @@ Totale: **10 ore**, divise in **5 lezioni**
     </tr>
     <tr>
         <td>18/03</td>
-        <td>21/03</td>
+        <td><mark><del>21/03</del></mark></td>
+    </tr>
+    <tr>
+        <td><mark><ins>25/03</ins></mark></td>
+        <td>-</td>
     </tr>
 > </table>
 
