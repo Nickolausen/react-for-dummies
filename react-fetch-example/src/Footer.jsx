@@ -19,7 +19,7 @@ export default function Footer() {
             </div>
             <div className="row">
                 <p className='py-2 d-flex justify-content-center gap-2 flex-nowrap'>
-                    <img style={{ width: "20px" }} src={ githubLogo } alt="GitHub Logo" /> <a className="text-decoration-none text-reset font-monospace" href="https://www.github.com/Nickolausen/react_for_dummies">GitHub Repository</a>
+                    <img style={{ width: "20px" }} src={ githubLogo } alt="GitHub Logo" /> <a className="text-decoration-none text-reset font-monospace" href="https://www.github.com/Nickolausen/react-for-dummies">GitHub Repository</a>
                 </p>
             </div>
         </div>

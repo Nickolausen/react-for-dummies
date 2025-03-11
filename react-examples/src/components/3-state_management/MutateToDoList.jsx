@@ -3,7 +3,7 @@ import CodeBlockDisplay from '../utility/CodeBlockDisplay'
 import Note from '../utility/Note'
 
 export default function MutateToDoList() {
-    const [ todos, setTodos ] = useState([ <li key={0}>Saluta Veneti</li>, <li key={1}>Insulta Vagnini</li> ])
+    const [ todos, setTodos ] = useState([ <li key={0}>Studia Ireland</li>, <li key={1}>Studia English Institutions</li> ])
     const [ id, setId ] = useState(todos.length)
     const [ newToDo, setNewToDo ] = useState("")
 
