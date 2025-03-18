@@ -13,7 +13,7 @@ export default function CompoundPost({children, post}) {
     </div>
 }
 
-CompoundPost.Image = function CompoundPostImage () {
+CompoundPost.Image = function CompoundPostImage() {
     const post = usePostContext()
     return <img src={post.image} className="card-img-top" alt="..." /> 
 }

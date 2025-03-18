@@ -23,9 +23,9 @@ export default function DashboardCompoundComponents() {
                 <div className="col-6 d-flex flex-column align-items-center">
                     <h4>Compound Post</h4>
                     <CompoundPost post={post}>
-                        <CompoundPost.Info/>
-                        <CompoundPost.Content/>
                         <CompoundPost.Image/>
+                        <CompoundPost.Content/>
+                        <CompoundPost.Info/>
                     </CompoundPost>
                 </div>
             </div>
