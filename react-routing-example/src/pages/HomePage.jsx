@@ -5,9 +5,11 @@ import Layout from "../components/Layout"
  * @returns 
  */
 export default function HomePage() {
-    return <Layout>
-        <section>
-            <h1 className="display-1">Home Page</h1>
-        </section>
-    </Layout> 
+    return (
+        <Layout>
+            <section>
+                <h1 className="display-1">Home Page</h1>
+            </section>
+        </Layout>
+    ) 
 }

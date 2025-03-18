@@ -1,0 +1,5 @@
+.first_paragraph::first-letter {
+    initial-letter: 3;
+    padding-right: 3px;
+    color: rgb(var(--accent-clr));
+}

@@ -1,0 +1,11 @@
+:root {
+  --accent-clr: 146, 21, 59; 
+}
+
+.min-h-100 {
+  min-height: 100% !important;
+}
+
+.accent-color {
+  color: rgb(var(--accent-clr));
+}

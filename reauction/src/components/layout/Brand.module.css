@@ -1,0 +1,7 @@
+.re {
+    color: rgb(var(--accent-clr)) !important;
+}
+
+.auction {
+    color: black
+}

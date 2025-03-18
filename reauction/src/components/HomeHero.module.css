@@ -1,0 +1,18 @@
+.background_image {
+    filter: brightness(.35);
+}
+
+.home_hero {
+    background-image: url("./Alberto-Timossi.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.home_hero::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    filter: opacity(.5);
+}

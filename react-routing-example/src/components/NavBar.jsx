@@ -35,7 +35,7 @@ export default function NavBar() {
                         </NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/shop" className={"nav-link"} end>
+                        <NavLink to="/shop" className={"nav-link"}>
                             Shop 
                         </NavLink>
                     </li>
