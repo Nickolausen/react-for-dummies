@@ -10,7 +10,8 @@
     <li>⁠⁠⁠venerdì 07 marzo, 14:30-16:30 in L1</li> 
     <li>⁠⁠martedì 11 marzo, 14:30-16:30 in L1</li>
     <li>⁠⁠martedì 18 marzo, 14:30-16:30 in L1</li> 
-    <li>⁠venerdì 21 marzo, 14:30-16:30 in L1</li>
+    <li>⁠<del>venerdì 21 marzo, 14:30-16:30 in L1</del></li>
+    <li>⁠<ins>martedì 25 marzo, 14:30-16:30 in L1</ins></li>
 </ul>
     <li> tenuto da: Nicholas Magi, <code>&lt;nicholas.magi24[at]gmail.com&gt;</code></li>
 </ul>
