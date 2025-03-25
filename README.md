@@ -58,7 +58,9 @@ Componenti **funzionali** in React: JSX - JavaScript eXtension, mix di HTML e co
 
 Naming convention Regole per la scrittura di markup in JSX, regole per la scrittura di JavaScript in JSX, passaggio di Props da componente padre a componente figlio. 
 
-Progetto "React Examples": Rendering condizionale, Event handling, Stato di un componente. Quando normali variabili non bastano: introduzione agli Hook con `useState()`. Come identificare uno stato, componenti con più stati. Lo stato è privato e isolato. "_Replace rather than mutate_": gestione di array e oggetti come elementi di stato. Stile di un componente: inline e tramite moduli. Sincronizzazione di un componente: lifecycle nei componenti classe vs. componenti funzionali, come gestire le tre fasi di vita di un componente —— nascita, aggiornamento e morte. Utilizzo di `useEffect()` per sincronizzare un componente con un servizio esterno. Passaggio di props da un componente ad un altro 'lontano' nell'UI Tree: drilling props vs utilizzo di Context. Cenni a `useContext()`, propedeutico alla comprensione del routing.
+Progetto "React Examples": Rendering condizionale, Event handling, Stato di un componente. Quando normali variabili non bastano: introduzione agli Hook con `useState()`. Come identificare uno stato, componenti con più stati. Lo stato è privato e isolato. "_Replace rather than mutate_": gestione di array e oggetti come elementi di stato. Stile di un componente: inline e tramite moduli. Sincronizzazione di un componente: lifecycle nei componenti classe vs. componenti funzionali, come gestire le tre fasi di vita di un componente —— nascita, aggiornamento e morte. Utilizzo di `useEffect()` per sincronizzare un componente con un servizio esterno. Passaggio di props da un componente ad un altro 'lontano' nell'UI Tree: drilling props vs utilizzo di Context. `useContext()`, propedeutico alla comprensione del routing. 
+
+Compound Components — come possono essere realizzati con l'utilizzo di `useContext()`. Cenni a `useRef()`.
 
 Thinking in React: i 5 passi necessari per strutturare una web application in React.
 
@@ -68,8 +70,4 @@ React: progettazione di S.P.A. di default. Routing non supportato nativamente. `
 
 ---
 #### [4] Gestione API esterna
-Utilzzo di FlickAPI per ottenere immagini salvate in uno storage esterno. Progetto "React Fetch Examples": tipico utilizzo di FlickrAPI. Prassi di utilizzo di una qualsiasi API: studia la documentazione, ottieni una chiave, implementa la soluzione su React. Utilizzo di `useEffect` come hook di sincronizzazione con servizi esterni. Ripasso di `Promise`.
-
----
-#### *opzionale* — [5] Deploy di un'applicazione
-Documentare Google Firebase / Netlify / GitHub Pages
+Utilzzo di FlickAPI per ottenere immagini salvate in uno storage esterno. Progetto "React Fetch Examples": tipico utilizzo di FlickrAPI. Prassi di utilizzo di una qualsiasi web API: studia la documentazione, ottieni una chiave, implementa la soluzione su React. Novità di React v19: hook `use()` per poter leggere il valore di una `Promise`. Componenti `Suspance` e `ErrorBoundary` per renderizzare componenti UI ad ogni stato di una `Promise`. Hook `useMemo()` per memorizzare in cache i risultati del fetch di dati.
