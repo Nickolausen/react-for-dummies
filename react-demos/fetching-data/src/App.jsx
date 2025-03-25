@@ -5,6 +5,7 @@ import { ErrorBoundary } from "react-error-boundary";
 import { QUERY_URL, PICTURES_URL } from "./lib/secrets";
 import Footer from "./Footer";
 import fetchPhotos from "./lib/fetchPhotos";
+import LoadingScreen from "./LoadingScreen";
 
 function Gallery({ photoPromise }) {
   // Nuovo hook (proprio nuovo, introdotto nell'ultima versione di React [v.19])
@@ -41,7 +42,7 @@ function App() {
     <>
       <h1 className="display-1 text-center pt-5">Galleria</h1>
       <ErrorBoundary fallback={<p>An error occurred!</p>}>
-        <Suspense fallback={<p>Loading...</p>}>
+        <Suspense fallback={<LoadingScreen message={"Caricamento..."}/>}>
           <Gallery photoPromise={photoPromiseCached}/>
         </Suspense>
       </ErrorBoundary>
