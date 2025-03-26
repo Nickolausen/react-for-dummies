@@ -1,6 +1,11 @@
 # React for Dummies
 ## Istituto Tecnico Tecnologico 'Blaise Pascal' @ Cesena, IT
 
+### Come utilizzare le dispense
+Il materiale presentato a lezione è pubblicato al link https://nickolausen.github.io/react-for-dummies/. In questa repository sono presenti demo relative sia ai [concetti fondamentali del web](./web-basics/) (HTML, CSS e JavaScript) sia a [React](./react-demos/). Ogni demo contiente le indicazioni per poter essere avviata.
+
+---
+
 ### Informazioni tecniche
 <ul>
 <li>Corso STEM;</li>
@@ -16,8 +21,9 @@
     <li> tenuto da: Nicholas Magi, <code>&lt;nicholas.magi24[at]gmail.com&gt;</code></li>
 </ul>
 
-### Contenuti del corso
 ---
+
+### Contenuti del corso
 #### [0] Fondamenti del Web
 HTML, CSS e JavaScript; separazione dei compiti: descrizione del contenuto (HTML), styling del contenuto (CSS) e interattività (JS).
 - HTML
