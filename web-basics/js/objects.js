@@ -33,8 +33,8 @@ function Persona(name, surname, age, birthday) {
 console.log()
 console.log("From Function class: "
     + new Persona(
-        "Laura",
-        "Vendraminetto",
+        "Luigi",
+        "Guiducci",
         55,
         new Date("06-01-1960").toDateString()).makePresentation())
 
